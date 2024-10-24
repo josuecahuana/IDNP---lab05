@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Relleno blanco o cualquier color que desees -->
+    <solid android:color="#FFFFFF"/>
+    <!-- Tamaño del círculo (opcional, ya que el ImageView controla el tamaño) -->
+    <size android:width="200dp" android:height="200dp"/>
+</shape>

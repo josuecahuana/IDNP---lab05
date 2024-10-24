@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_background"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/images"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Catedral de Arequipa"
+                android:textAlignment="center"
+                android:textColor="#FDBF00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/normalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fue construida con ignimbrita (piedra de origen volcánico), y bovedas de ladrillo; es el santuario principal de la ciudad ocupando todo el lado norte de la Plaza de Armas. Construida totalmente en sillar, exhibe un estilo neorrenacentista con cierta influencia gótica. Su fachada está constituida por setenta columnas con capiteles corintios, tres portadas y dos grandes arcos laterales. Está rematada por dos altas torres renacentistas y estilizadas."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

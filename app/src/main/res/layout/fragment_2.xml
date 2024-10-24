@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_background2"
+        android:layout_marginBottom="16dp">
+
+        <!-- Imagen circular pegada al borde izquierdo -->
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/images"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp" />
+
+        <!-- Título con las primeras letras sobre la imagen -->
+        <TextView
+            android:id="@+id/titleText_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-50dp"
+
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/profile_image_left"
+            android:paddingLeft="1dp"
+            android:paddingRight="0dp"
+            android:text="Catedral de Arequipa      "
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_background2">
+
+        <!-- Imagen circular pegada al borde izquierdo -->
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image2_left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/images"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp" />
+
+        <!-- Título con las primeras letras sobre la imagen -->
+        <TextView
+            android:id="@+id/titleText2_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-50dp"
+
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/profile_image2_left"
+            android:paddingLeft="1dp"
+            android:paddingRight="0dp"
+            android:text="Claustro de la Compañia"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>
